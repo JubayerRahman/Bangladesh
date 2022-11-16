@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+.economySection{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+}
+.main{
+    position: sticky;
+    top: 0px;
+    margin-top: 30px;
+    left: 0px;
+    width: 260px;
+    height: 85%;
+    border-right: 2px solid #D84F43;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.main li{
+    list-style: none;
+    width: 100%;
+    font-family: 'Hind Siliguri', sans-serif;
+    cursor: pointer;
+    font-size: 20px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    
+}
+.main a{
+    text-decoration: none;
+}
+.main li a:hover{
+    color: #D84F43;
+    text-decoration: none;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+}
+.description{
+    margin-top: 50px;
+    margin-left:20px;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+.description h3{
+    color: #D84F43;
+}
+p{
+    margin: 20px;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+footer{
+    z-index: 100000000;
+}
+@media (min-width:300px) and (max-width:1200px) {
+    .listSection{
+        width: 30vw;
+    }
+    .main{
+        width: 30vw;
+    }
+    .main li{
+        font-size: 15px;
+    }
+}

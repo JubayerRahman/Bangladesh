@@ -1,0 +1,13 @@
+main{
+    animation: transmission 0.75s ease-out;
+}
+@keyframes transmission {
+    from{
+        opacity: 0;
+        transform: rotateY(-120deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateY(0);
+    }
+}

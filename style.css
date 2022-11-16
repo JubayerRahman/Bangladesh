@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.bootstrapNav{
+    position: sticky;
+    top:0;
+    background-color: #28262F;
+    z-index: 100000;
+}
+.links{
+    display:flex;
+    justify-content: flex-end;
+    width: 78vw;
+    color: white;
+}
+.navlink{
+    font-family: 'Hind Siliguri', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 5px red;
+}
+.navlink:hover{
+    /* text-shadow: 1px 1px 20px black; */
+    cursor: pointer;
+    font-weight: bold;
+    color: #D84F43;
+    text-shadow: 5px 5px 5px black;
+}
+.navlink:active, .navlink:visited{
+    color: white;
+    text-shadow: 1px 1px 5px red
+}
+.nLogo{
+    width: 80px;
+    margin-left: 30px;
+}
+.logoSection{
+    display: flex;
+    align-items: center;
+}
+.navname{
+    color: white;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.heroSection{
+    background-image: url(./images/wallpaperflare.com_wallpaper.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+.texts{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-family: 'Hind Siliguri', sans-serif;
+    margin-top: 60px;
+}
+.welcomeText{
+    font-size: 30px;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 5px red;
+}
+.MainBangladesh{
+    font-size: 100px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px red;
+}
+.desh{
+    color: #28262F;
+}
+.nationalAnthem{
+    background-color: #D84F43;
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 40px;
+    font-family: 'Hind Siliguri', sans-serif;
+    box-shadow: 10px 10px 5px black;
+    margin-right: 10px;
+}
+.porjoton, .history, .culture{
+    margin-top: 50px;
+    font-family: 'Hind Siliguri', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.porjoton h1, .history h1, .culture h1{
+    color: #D84F43;
+    font-weight: bold;
+    padding-bottom: 0%;
+    /* border-bottom: 5px solid #453f58; */
+}
+hr{
+    border-top: 7px solid #453f58;
+    width: 5vw;
+    border-radius: 20px;
+    opacity: 1;
+    padding-bottom: 0%;
+    margin-top: auto;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.jela{
+    width: 20vw;
+    text-align: center;
+    /* margin-top: 40px;
+    margin-bottom: 40px; */
+    margin: 40px 20px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    overflow-y: hidden;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jela a{
+    text-decoration: none;
+    color: white;
+    font-size: 60px;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+.jela h2{
+    width: 100%;
+    height: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    border-radius: 20px;
+    border: 2px solid #D84F43;
+    background: linear-gradient(#28262F 25%,#D84F43);
+    opacity: 0;
+    transition: all 0.75s ease-out;
+}
+.dhaka{
+    background-image: url(./images/dhaka.jpg);
+}
+.chattagram{
+    background-image: url(./images/chattagram.jpg);
+    background-position: center;
+}
+.borisal{
+    background-image: url(./images/borisal.jpg);
+    /* background-position: center; */
+    background-size: auto;
+}
+.rongpur{
+    background-image: url(./images/rongpur.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.rajshahi{
+    background-image: url(./images/rajshahi.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.khulna{
+    background-image: url(./images/Khulna.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.Mymensingh{
+    background-image: url(./images/Mymensingh.jpg);
+    /* background-position: center; */
+    background-size: cover;
+}
+.sylhet{
+    background-image: url(./images/bangladesh-tea-cultivate-sylhet-tea-garden-sylhet-bangladesh-tea-garden-sylhet-bangladesh-103679965.jpg);
+    /* background-position: center; */
+    background-size: cover;
+}
+.dhaka:hover , .chattagram:hover , .borisal:hover, .rongpur:hover, .rajshahi:hover,
+.khulna:hover, .Mymensingh:hover, .sylhet:hover{
+    border:3px solid #D84F43;
+    color: #28262F;
+}
+.dhaka h2:hover, .chattagram h2:hover, .borisal h2:hover, .rongpur h2:hover,
+.rajshahi h2:hover,.khulna h2:hover, .Mymensingh h2:hover,.sylhet h2:hover {
+    opacity: 1;
+}
+.history{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.situation{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 80px auto;
+    width: 90vw;
+}
+.situation img{
+    width: 35vw;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px black;
+}
+.situation h3{
+    color: #D84F43;
+    margin-bottom: 20px;
+}
+.situstionText{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.textAlignleft{
+    text-align: left;
+}
+.textAlignRight{
+    text-align: right;
+}
+.historyButtonn{
+    background-color: #D84F43;
+    color: #28262F;
+    padding: 10px;
+    border-radius: 10px;
+}
+.historyButtonn a{
+    text-decoration: none;
+    color: wheat;
+    padding: 20px;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+.historyButtonn a:hover{
+    color: white;
+}
+.historyButtonn:hover{
+    color: white;
+}
+.ciltureSlider{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #453f58;
+    color: aliceblue;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.sliderData{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+footer{
+    background-color: #28262F;
+    font-family: 'Hind Siliguri', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #D84F43;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: #D84F43;
+}
+
+/* dhaka page design */
+.content{
+    margin: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.singlePageDhakaImg{
+    width: 30vw;
+    height: 50vh;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px black;
+}
+.imgSection h3{
+    text-align: center;
+    color: #D84F43;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.cityText{
+    margin-left: 40px;
+}
+.cityText h3{
+    color: #D84F43;
+    font-weight: bold;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+.cityText p{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+.dhakaList{
+    font-family: 'Hind Siliguri', sans-serif;
+    color: #D84F43;
+}
+
+
+/* media */
+
+@media (min-width:300px) and (max-width:800px) {
+    .nLogo{
+        width: 60px;
+        margin-left: 0px;
+    }
+    .togButton{
+        background-color: wheat;
+    }
+    .links{
+        width:100vw;
+    }
+    .navlink{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+    .navlink:hover{
+        background-color: wheat;
+    }
+    .heroSection{
+        display: flex;
+        height: 87vh;
+        justify-content: center;
+        background-position: inherit;
+    }
+    .texts{
+        margin-top: 0px;
+    }
+    .welcomeText{
+        font-size: 15px;
+    }
+    .MainBangladesh{
+        font-size: 50px;
+    }
+    .nationalAnthem{
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .jela{
+        width: 80vw;
+    }
+    .jela h2{
+        font-size: 20px;
+    }
+    .jela a{
+        font-size: 40px;
+    }
+    .situation{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .situation img{
+        width: 80vw;
+    }
+    .situstionText{
+        text-align: center;
+        margin-top: 35px;
+    }
+    .textAlignRight{
+        text-align: center;
+    }
+    hr{
+        width: 20vw;
+    }
+    /* dhaka page design */
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.singlePageDhakaImg{
+    width: 80vw;
+}
+.cityText{
+    margin-top: 20px;
+    margin-left: 0%;
+}
+footer h5{
+    font-size: 15px;
+}
+.ciltureSlider{
+    justify-content: center;
+    height:800px;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+}
+.sliderData{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+}
+
+@media (min-width:800px) and (max-width:1200px) {
+    .links{
+        width: 75vw;
+    }
+    .jela{
+        width:40vw;
+    }
+}
